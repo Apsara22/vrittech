@@ -43,21 +43,21 @@ const App = () => {
   return (
     <div className="graph-container">
       <div className="graph">
-        {/* Vertical lines */}
+     
         <div className="vertical-lines">
           {Array.from({ length: columns + 1 }).map((_, i) => (
             <div key={`v-${i}`} className="vertical-line" style={{ left: `${(i * 100) / columns}%` }} />
           ))}
         </div>
         
-        {/* Horizontal lines */}
+        
         <div className="horizontal-lines">
           {Array.from({ length: rows + 1 }).map((_, i) => (
             <div key={`h-${i}`} className="horizontal-line" style={{ top: `${(i * 100) / rows}%` }} />
           ))}
         </div>
 
-        {/* Blue boxes (rotates every 3 seconds) */}
+      
         {currentBoxes.map((box, index) => (
           <div
             key={` #6c55da-${index}`}
@@ -67,7 +67,7 @@ const App = () => {
               top: `${(box.y * 100) / rows}%`,
               width: `${100 / columns}%`,
               height: `${100 / rows}%`,
-              backgroundColor: ' #6c55da',
+              backgroundColor: ' #6b53e1ff',
               opacity: 0.7,
             }}
           />

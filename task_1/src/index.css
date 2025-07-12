@@ -68,7 +68,7 @@
 }
 
 .text-section:hover ~ .image-section .icon-4 {
-  transform: translate(54%, -50%) rotate(226deg) translateY(-336px) rotate(-226deg) scale(1.2);
+  transform: translate(215%, 49%) rotate(226deg) translateY(-336px) rotate(-226deg) scale(1.2);
   opacity: 1;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .text-section:hover ~ .image-section .icon-5 {
-  transform: translate(-132%, 108%) rotate(300deg) translateY(-372px) rotate(-300deg) scale(1.2);
+  transform: translate(-132%, 321%) rotate(300deg) translateY(-372px) rotate(-300deg) scale(1.2);
   opacity: 1;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .title .highlight {
-  color: green;
+  color: #65ddc8;
 }
 
 .view-all {
@@ -144,11 +144,38 @@
   z-index: 100;
   transition: all 0.5s ease;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 /* Positioning images in a circle */
 .image-1 {
   transform: translate(-62%, -135%) rotate(280deg) translateY(-170px) rotate(-280deg);
+}
+
+.image-1.selected {
+    outline: 5px solid #a3ece2;
+    border-radius: 32px;
+}
+
+.testi1 {
+    position: absolute;
+    width: 150px;
+    height: 47px;
+    top: 24%;
+    left: 35%;
+    transform: translate(50%, -50%);
+    z-index: 200;
+}
+
+.testi2 {
+    position: absolute;
+    width: 325px;
+    height: 182px;
+    border-radius: 16px;
+    top: 18%;
+    left: 39%;
+    transform: translate(-50%, 50%);
+    z-index: 200;
 }
 
 .icon-1 {
@@ -171,6 +198,11 @@
   transform: translate(-91%, -15%) rotate(120deg) translateY(-160px) rotate(-120deg);
 }
 
+.image-4.selected {
+  outline: 4px solid rgb(123, 211, 246);
+  border-radius: 32px;
+}
+
 .icon-4 {
   transform: translate(54%, -50%) rotate(226deg) translateY(-168px) rotate(-226deg);
 }
@@ -185,6 +217,23 @@
 
 .image-6 {
   transform: translate(-214%, -79%) rotate(260deg) translateY(-150px) rotate(-260deg);
+}
+
+/* Video styles */
+.video {
+    position: absolute;
+    top: 44%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 228px;
+    border-radius: 5px;
+    z-index: 200;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    outline: 4px solid #fff;
+    border-radius: 2;
 }
 
 /* Adjustments for specific positions */
