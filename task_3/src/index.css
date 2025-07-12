@@ -60,23 +60,23 @@
   height: 461px;
   width: 592px;
   border-radius: 32px;
-  padding: 40px; /* Add padding for inner spacing */
-  color: white; /* Set all text color to white */
+  padding: 40px;
+  color: white; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* View All Course section */
+
 .box1 > div:first-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 8px; /* 8px gap between text and arrow */
+  gap: 8px; 
   font-size: 18px;
 }
 
-/* Logos section */
+
 .box1 .logos {
   display: flex;
   gap: 43px;
@@ -85,7 +85,7 @@
   justify-content: center;
 }
 
-/* Text section */
+
 .box1 .text {
   display: flex;
   align-items: flex-end;
@@ -93,9 +93,9 @@
 }
 
 .box1 .text-lf {
-  position: relative; /* Make this a positioning context */
+  position: relative; 
   display: flex;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
 }
 
 .box1 .text-lf .span1 {
@@ -126,7 +126,7 @@
   font-weight: 400;
 }
 
-/* Add these styles to your existing CSS */
+
 
 .box2 {
   background-color: #f9d9d9;
@@ -193,7 +193,7 @@
     font-weight: 700;
 }
 
-/* Add these styles to your existing CSS */
+
 
 .box3 {
   background-color: #f9d9d9;
@@ -260,7 +260,7 @@
   font-weight: 700;
 }
 
-/* Add these to your existing CSS */
+
 
 .box-container1, 
 .box-container2, 
@@ -302,7 +302,7 @@
   cursor: pointer;
 }
 
-/* Ensure all box containers have the same dimensions to prevent layout shift */
+
 .box-container1, 
 .box-container2, 
 .box-container3 {
