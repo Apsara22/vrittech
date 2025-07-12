@@ -1,0 +1,205 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.text-section:hover ~ .image-section .image-grid img {
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+.text-section:hover ~ .image-section .image-1 {
+  transform: translate(-62%, -135%) rotate(280deg) translateY(-340px) rotate(-280deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .icon-1 {
+  transform: translate(-15%, -50%) rotate(324deg) translateY(-282px) rotate(-324deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .image-2 {
+  transform: translate(22%, -45%) rotate(10deg) translateY(-300px) rotate(-10deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .image-3 {
+  transform: translate(137%, -37%) rotate(40deg) translateY(-178px) rotate(-40deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .icon-2 {
+  transform: translate(-42%, 76%) rotate(80deg) translateY(-462px) rotate(-80deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .image-4 {
+  transform: translate(-91%, -15%) rotate(120deg) translateY(-320px) rotate(-120deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .icon-4 {
+  transform: translate(54%, -50%) rotate(226deg) translateY(-336px) rotate(-226deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .image-5 {
+  transform: translate(-189%, -50%) rotate(190deg) translateY(-246px) rotate(-190deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .icon-5 {
+  transform: translate(-132%, 108%) rotate(300deg) translateY(-372px) rotate(-300deg) scale(1.2);
+  opacity: 1;
+}
+
+.text-section:hover ~ .image-section .image-6 {
+  transform: translate(-214%, -79%) rotate(260deg) translateY(-300px) rotate(-260deg) scale(1.2);
+  opacity: 1;
+}
+
+.subtitle p {
+  font-size: 24px;
+  margin: 0;
+  display: block;
+}
+
+.title h5 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+}
+
+.title .highlight {
+  color: green;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.view-all:hover {
+  transform: translateX(5px);
+}
+
+.image-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main-image,
+.icon-image {
+  width: 96px;
+  height: 97px;
+  border: none;
+  outline: none;
+  border-radius: 32px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  z-index: 100;
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+/* Positioning images in a circle */
+.image-1 {
+  transform: translate(-62%, -135%) rotate(280deg) translateY(-170px) rotate(-280deg);
+}
+
+.icon-1 {
+  transform: translate(-15%, -50%) rotate(324deg) translateY(-141px) rotate(-324deg);
+}
+
+.image-2 {
+  transform: translate(22%, -45%) rotate(10deg) translateY(-150px) rotate(-10deg);
+}
+
+.image-3 {
+  transform: translate(137%, -37%) rotate(40deg) translateY(-89px) rotate(-40deg);
+}
+
+.icon-2 {
+  transform: translate(-42%, 76%) rotate(80deg) translateY(-231px) rotate(-80deg);
+}
+
+.image-4 {
+  transform: translate(-91%, -15%) rotate(120deg) translateY(-160px) rotate(-120deg);
+}
+
+.icon-4 {
+  transform: translate(54%, -50%) rotate(226deg) translateY(-168px) rotate(-226deg);
+}
+
+.image-5 {
+  transform: translate(-189%, -50%) rotate(190deg) translateY(-123px) rotate(-190deg);
+}
+
+.icon-5 {
+  transform: translate(-132%, 108%) rotate(300deg) translateY(-186px) rotate(-300deg);
+}
+
+.image-6 {
+  transform: translate(-214%, -79%) rotate(260deg) translateY(-150px) rotate(-260deg);
+}
+
+/* Adjustments for specific positions */
+.image-1 {
+  margin-top: -6px;
+}
+
+.icon-1 {
+  margin-top: -1px;
+}
+
+.icon-2 {
+  margin-bottom: 5px;
+}
+
+.image-4 {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,310 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Nohemi:wght@400;700&display=swap');
+
+.container {
+  margin: 60px 112px;
+  background-color: white;
+  font-family: 'Nohemi', sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.highlight {
+  color: #72bd72;
+}
+
+.box-container2 {
+  display: flex;
+  gap:32px; 
+}
+.box-container3 {
+  display: flex;
+  gap:32px; 
+}
+.box-container1 {
+  display: flex;
+  gap:32px; 
+}
+
+.box {
+  
+ display: flex;
+ 
+}
+
+
+.box1 {
+  background-color: #C33241;
+  height: 461px;
+  width: 592px;
+  border-radius: 32px;
+  padding: 40px; /* Add padding for inner spacing */
+  color: white; /* Set all text color to white */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* View All Course section */
+.box1 > div:first-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px; /* 8px gap between text and arrow */
+  font-size: 18px;
+}
+
+/* Logos section */
+.box1 .logos {
+  display: flex;
+  gap: 43px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+/* Text section */
+.box1 .text {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.box1 .text-lf {
+  position: relative; /* Make this a positioning context */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.box1 .text-lf .span1 {
+  font-size: 150px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.box1 .text-lf .span2 {
+    font-size: 64px;
+    position: absolute;
+    top: -27px;
+    right: -24px;
+    line-height: 1;
+    font-weight: 700;
+}
+.box1 .text-rf{
+  padding-left: 5px;
+}
+.box1 .text-rf .p1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.box1 .text-rf .p2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Add these styles to your existing CSS */
+
+.box2 {
+  background-color: #f9d9d9;
+  width: 280px;
+  height: 461px;
+  border-radius: 32px;
+  padding: 40px;
+  color: #c33241;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box2 .horiz {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100%;
+    margin-top: 233px;
+    margin-left: 37px;
+}
+
+.box2 .upcoming-text {
+  display: block;
+  gap: 8px;
+}
+
+.box2 .upcoming, 
+.box2 .courses {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.box2 .description p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.box2 .count-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -48px;
+    margin-left: 12px;
+}
+
+.box2 .count {
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.box2 .plus {
+    font-size: 64px;
+    position: absolute;
+    top: -26px;
+    right: 27px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+/* Add these styles to your existing CSS */
+
+.box3 {
+  background-color: #f9d9d9;
+  width: 280px;
+  height: 461px;
+  border-radius: 32px;
+  padding: 40px;
+  color: #c33241;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box3 .horiz {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  width: 100%;
+  margin-top: 233px;
+  margin-left: 37px;
+}
+
+.box3 .outgoing-text {
+  display: block;
+  gap: 8px;
+}
+
+.box3 .outgoing, 
+.box3 .courses {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.box3 .description p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.box3 .count-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-top: -48px;
+  margin-left: 12px;
+}
+
+.box3 .count {
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.box3 .plus {
+  font-size: 64px;
+  position: absolute;
+  top: -26px;
+  right: 27px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+/* Add these to your existing CSS */
+
+.box-container1, 
+.box-container2, 
+.box-container3 {
+  display: flex;
+  gap: 32px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.box-container1.active, 
+.box-container2.active, 
+.box-container3.active {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
+
+.box-container1.hidden, 
+.box-container2.hidden, 
+.box-container3.hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.box-container1.fade-out, 
+.box-container2.fade-out, 
+.box-container3.fade-out {
+  opacity: 0;
+  visibility: visible;
+  position: absolute;
+  pointer-events: none;
+}
+
+.box-container1, 
+.box-container2, 
+.box-container3 {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Ensure all box containers have the same dimensions to prevent layout shift */
+.box-container1, 
+.box-container2, 
+.box-container3 {
+  min-height: 461px;
+}
